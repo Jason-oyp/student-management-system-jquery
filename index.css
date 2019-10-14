@@ -1,0 +1,180 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+body,html{
+    height:100%;
+    min-width: 700px;
+}
+.head-mes {
+    width: 100%;
+    height: 70px;
+    background-color: #354457;
+}
+.head-mes .logo {
+    width: 200px;
+    height: 70px;
+    /* overflow: hidden; */
+    margin-left: 20px;
+    line-height: 70px;
+}
+.head-mes .logo img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+.head-mes .logo span{
+    color: #b3bcc5;
+    font-size: 14px;
+}
+.left-list{
+    width: 200px;
+    height: calc(100% - 70px);
+    background-color: #4d5e70;
+    color: #b3bcc5;
+    float:left;
+}
+.left-list .menu-list dt{
+    padding-left:20px;
+    height:40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.left-list .menu-list dd{
+    padding-left:40px;
+    height:40px;
+    line-height: 40px;
+    cursor: pointer;
+}
+.left-list .menu-list dd:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #354457;
+}
+.left-list .menu-list dd.active{
+    background-color: #ddd;
+    color: #354457;
+}
+.content{
+    width: calc(100% - 200px);
+    height: calc(100% - 70px);
+    min-width: 500px;
+    background-color: #eee;
+    float:right;
+    position: relative;
+}
+.content .add-stu{
+    width: 400px;
+    margin:100px auto;
+}
+.content .add-stu div{
+    margin: 10px 0;
+}
+.content label{
+    width:130px;
+    display:inline-block;
+    text-align: right;
+}
+.content .sex{
+    display: inline;
+    margin-right: 10px;
+}
+.content .button{
+    text-align: center;
+}
+.content .button input{
+    width: 50px;
+    height: 30px;
+    margin:0 20px;
+}
+.add-stu{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top:0;
+
+}
+.stu-list{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top:0;
+}
+
+.stu-list table{
+    width: 100%;
+    text-align: center;
+}
+.stu-list table thead{
+    font-size: 15px;
+    background-color: #e3e8ee;
+    color: #646987;
+}
+.stu-list table tbody tr{
+    height: 30px;
+    line-height: 30px;
+    background-color: #fff;
+    font-size: 14px;
+}
+.stu-list table tbody tr button{
+    border:none;
+    outline:none;
+    color:#fff;
+    padding:3px;
+    cursor: pointer;
+}
+.stu-list table tbody tr .edit{
+    background-color: #5cb85c;
+
+}
+.stu-list table tbody tr .edit:hover{
+    background-color: #398439;
+}
+.stu-list table tbody tr .delete{
+    background-color: #d9534f;
+}
+.stu-list table tbody tr .delete:hover{
+    background-color: #c9302c;
+}
+.stu-list .mask{
+    position:fixed;
+    left: 0px;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.stu-list .mask .edit-content{
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-left: -200px;
+    margin-top:-150px;
+    background-color: #fff;
+    display: none;
+}
+.stu-list .mask .edit-content form div{
+    margin:10px 0;
+}
+.stu-list .mask .edit-content h3 span{
+    float:right;
+    margin-right:10px;
+    cursor: pointer;
+    font-weight: normal;
+}
+.stu-list .mask .edit-content h3 span:hover{
+    opacity:0.5;
+}
+.stu-list .mask{
+    display: none;
+}
+.content-active{
+    display: block;
+}
