@@ -166,7 +166,7 @@ function creatStore() {
 	}
 	function requestData(url, data, cb) {
 		$.ajax({
-			url: 'http://open.duyiedu.com' + url,
+			url: 'https://open.duyiedu.com' + url,
 			type: "get",
 			data: $.extend({
 				appkey: 'dongmeiqi_1547441744650'
